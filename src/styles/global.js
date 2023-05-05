@@ -6,14 +6,17 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     background: ${(props) => props.theme.colors.gray900};
-    color: ${(props) => props.theme.colors.gray600};
+    color: ${(props) => props.theme.colors.white};
     font-family: ${(props) => props.theme.fontFamily.sans};
-    padding: 1rem;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: ${(props) => props.theme.fontFamily.heading};
+    font-family: ${(props) => props.theme.fontFamily.sans};
     font-weight: bold;
     color: ${(props) => props.theme.colors.white};
+  }
+
+  a {
+    color: white;
   }
 `;

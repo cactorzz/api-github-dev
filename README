@@ -1,0 +1,5 @@
+<h1>API GitHub em React</h1>
+<br>
+<p>O projeto foi feito em React consumindo a API própria do GitHub com a blibioteca axios.</p>
+<p>A interface mostra o perfil do usuário pesquisado e seus repositóriorios</p>
+<p>podendo organizar os repositórios filtrando suas linguagens:</p>
