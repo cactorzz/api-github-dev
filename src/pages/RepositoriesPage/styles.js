@@ -32,6 +32,7 @@ export const Main = styled.section`
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
     height: 100%;
+    width: 90%;
   }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.sm}) {
