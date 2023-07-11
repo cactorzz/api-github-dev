@@ -9,18 +9,26 @@ import githubLogo from '../../assets/images/github-logo.svg'
 export default function MainPage() {
   const [login, setLogin] = useState('');
 
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      const link = `/${login}/repositories`;
+      window.location.href = link;
+    }
+  };
+
   return (
     <Container>
       <Logo src={githubLogo} alt='API Github' />
-      <Title>API Github</Title>
+      <Title>GitHub Profiles</Title>
       <Form>
         <Input
-          placeholder="usuário"
+          placeholder="Ex: andrebaltieri"
           value={login}
           onChange={(event) => setLogin(event.target.value)}
+          onKeyPress={handleKeyPress}
         />
         <Button to={`/${login}/repositories`}>
-          <MdSearch size={42} />
+          <MdSearch size={42}/>
         </Button>
       </Form>
     </Container>

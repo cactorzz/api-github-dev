@@ -9,7 +9,7 @@ function Profile({ user }) {
   return (
     <Container>
       <Button href="/">
-            <MdArrowBackIos size={15} />Voltar
+            <MdArrowBackIos size={17} />Voltar
       </Button>
       <Header>
         <Avatar src={user.avatar_url} />
